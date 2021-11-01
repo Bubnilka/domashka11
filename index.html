@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 11_dz</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__title">Homework 11</div>
+			<div class="header__sub-title">Позиционирование</div>
+		</header>
+		<main class="main">
+			<div class="block block_margin-bottom">
+				<div class="block__item block__item_color-red">position: static;</div>
+				<div class="block__item block__item_color-green">Статичное положение объекта (по умолчанию)</div>
+				<div class="block__item block__item_color-blue">top,left,right,bottom,z-index - не работают</div>
+			</div>
+			<div class="block-two block-two_margin-bottom">
+				<div class="block-two__item-one">Положение элемента устанавливается относительно
+					его исходного положения в коде.
+					Добавление свойств left, top, right и bottom изменяет
+					позицию элемента и сдвигает его в ту или иную сторону
+					от первоначального расположения.</div>
+				<div class="block-two__item-two">position: relative;+top,left</div>
+				<div class="block-two__item-three">top,left,right,bottom,z-index - работают </div>
+			</div>
+			<div class="block-three block-three_margin-bottom">
+				<div class="block-three__item-one">Положение элемента устанавливается относительно
+					его исходного положения в коде.
+					Добавление свойств left, top, right и bottom изменяет
+					позицию элемента и сдвигает его в ту или иную сторону
+					от первоначального расположения.</div>
+				<div class="block-three__item-two">position: relative;</div>
+				<div class="block-three__item-three">position: relative;+z-index</div>
+			</div>
+			<div class="block-four block-four_margin-bottom">
+				<div class="block-four__item-one">Элемент якобы вырывается из кода и зависайт в воздухе.
+					Он перестает влиять на остальные элементы.
+					Добавление свойств left, top, right и bottom
+					изменяет позицию элемента и сдвигает его
+					в ту или иную сторону относительно родителя
+					у которого задан параметр position: relative;</div>
+				<div class="block-four__item-two">position: absolute;(position: relative; у родителя+top,left)</div>
+				<div class="block-four__item-three">1) Объект теряет свое "тело", и зависает в воздухе.
+					2) Другие объекты занимают его место
+					3) Объект превращается в строчный, тоесть
+					размер зависит от контента в нем
+					4) Объект позиционируется обносительно первого родителя,
+					для которого указано position: relative;
+					5) Необходимо сопровождать свойствами top,left,right,bottom</div>
+			</div>
+			<div class="block-five block-five_margin-bottom">
+				<div class="block-five__item-one">Элемент якобы вырывается из кода и зависайт в воздухе.
+					Он перестает влиять на остальные элементы.
+					Добавление свойств left, top, right и bottom
+					изменяет позицию элемента и сдвигает его
+					в ту или иную сторону относительно родителя
+					у которого задан параметр position: relative;</div>
+				<div class="block-five__item-two">position: absolute;+top,left</div>
+				<div class="block-five__item-three">1) Объект теряет свое "тело", и зависает в воздухе.
+					2) Другие объекты занимают его место
+					3) Объект превращается в строчный, тоесть
+					размер зависит от контента в нем
+					4) Объект позиционируется обносительно первого родителя,
+					для которого указано position: relative;
+					5) Необходимо сопровождать свойствами top,left,right,bottom</div>
+			</div>
+			<div class="block-six block-six_margin-bottom">
+				<div class="block-six__item-one">Элемент якобы вырывается из кода и зависайт в воздухе.
+					Фиксируется, то есть не скролится вместе с содержимым.
+					Он перестает влиять на остальные элементы.
+					Добавление свойств left, top, right и bottom изменяет позицию элемента
+					и сдвигает его в ту или иную сторону относительно окна браузера.</div>
+				<div class="block-six__item-two">position: fixed;+width: 100%;
+					+top,left</div>
+				<div class="block-six__item-three">1) Объект теряет свое "тело", и зависает в воздухе.
+					2) Другие объекты занимают его место
+					3) Объект превращается в строчный, тоесть
+					размер зависит от контента в нем
+					4) Объект позиционируется обносительно окна браузера
+					5) Необходимо сопровождать свойствами top,left,right,bottom</div>
+			</div>
+			<div class="block-seven block-seven_margin-height">
+				<div class="block-seven__item-one">Это гибридное сочетание значений static и fixed.
+					Изначально єлемент ведет себя как static
+					но после того как скролл доходит до его границы он становиться
+					fixed и прилипает к указанной позиции top или bottom.</div>
+				<div class="block-seven__item-two">position: sticky;</div>
+				<div class="block-seven__item-three">top,left,right,bottom,z-index - работают
+				</div>
+				<div>
+					<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				</div>
+
+			</div>
+			<ul class="list list_margin-bottom">
+				<li class="list__item">
+					Какой-то текст
+				</li>
+				<li class="list__item">
+					Какой-то текст
+				</li>
+				<li class="list__item">
+					Много какого-то текста Много какого-то текста Много какого-то текста Много какого-то текста Много
+					какого-то текста Много какого-то текста Много какого-то текста Много какого-то текста Много какого-то
+					текста Много какого-то текста Много какого-то текста
+				</li>
+				<li class="list__item">
+					Какой-то текст
+				</li>
+			</ul>
+			<div class="picture">
+				<img src="img/dog.jpg" alt="dog">
+			</div>
+			<div class="premier-dog premier-dog_margin">
+				<div class="premier-dog__header header-premier-dog">
+					<a href="" class="header-premier-dog__link-logo">
+						<img src="img/main-page/Logo-Placeholder-5.svg" alt="logo">
+					</a>
+					<div class="header-premier-dog__hours">BOARDING HOURS <br>
+						Mon - Sat: 7:00 am - 6:00 pm</div>
+					<div class="header-premier-dog__call">CALL US <br>
+						(555) Pup-Cares</div>
+					<a href="" class="header-premier-dog__link">Make an Appointment</a>
+					<ul class="header-premier-dog__list">
+						<li class="header-premier-dog__item">Services</li>
+						<li class="header-premier-dog__item">Specials</li>
+						<li class="header-premier-dog__item">Facilities</li>
+						<li class="header-premier-dog__item">Reviews</li>
+						<li class="header-premier-dog__item">Shop</li>
+						<li class="header-premier-dog__item">About</li>
+					</ul>
+				</div>
+				<div class="premier-dog__title">Premier dog boarding, daycare & day spa</div>
+				<a href="" class="premier-dog__link-two">Make an Appointment</a>
+				<div class="premier-dog__points">
+					<img src="img/main-page/Stylize-Circles.svg" alt="points">
+				</div>
+				<div class="who-we-are who-we-are_position">
+					<div class="who-we-are__icon">Who we are</div>
+					<div class="who-we-are__title">Nemo enim ipsam voluptatem quia voluptas in proident</div>
+					<div class="who-we-are__text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+						suscipit
+						laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea
+						voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas
+						nulla pariatur.</div>
+					<div class="who-we-are__dog">
+						<img src="img/main-page/dog.jpg" alt="dog">
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<footer class="footer">Подвал</footer>
+</body>
+
+</html>
